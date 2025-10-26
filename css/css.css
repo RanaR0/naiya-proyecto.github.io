@@ -1,0 +1,93 @@
+body{
+  background-color:  black;
+  color: white;
+}
+header{
+    color: white;
+    background-image: url(../img/8934.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+h1{
+  text-align: center;
+  text-shadow: 0 0 30px black;
+}
+.frases{
+  align-items: center;
+  text-shadow: 0 0 30px black;
+}
+/* Navegador */
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+}
+nav ul li{
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* Cuando nos ponemos encima de un li en concreto */
+nav ul li:hover{
+  border-top: 4px solid transparent;
+  border-image: linear-gradient(135deg, #5f0aa9, #9d4edd, #c77dff, white) 1;
+  text-shadow: 0 0 10px #5f0aa9,
+              0 0 20px #9d4edd,
+              0 0 30px #c77dff, 
+              0 0 40px white;
+}
+/* Nombre de la empresa */
+h1{
+    font-size: 3.5em;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+/* Frases */
+.frases {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.5em;
+  color: white;
+  padding-left: 20px;
+}
+
+.frase1 {
+  border-right: 2px solid white;  /* cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: escribir 8s steps(18) infinite, cursor 0.5s step-end infinite alternate;
+  position: absolute;
+
+  
+}
+.frase2 {
+  border-right: 2px solid white;  /* cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: escribir 8s steps(20) 4s infinite, cursor 2.5s step-end infinite alternate;
+  position: absolute;
+  opacity: 0;
+}
+
+/* Animación de escribir */
+@keyframes escribir {
+  0%, 10% { width: 0; opacity: 1;}        
+  10%, 50% { width: 18ch; opacity: 1;}   
+  40%, 50% { width: 0; opacity: 1;}    
+  50%, 100% { width: 0; opacity: 0;} 
+}
+
+/* Animación del cursor */
+@keyframes cursor {
+  50% { border-color: transparent; }
+}
+
