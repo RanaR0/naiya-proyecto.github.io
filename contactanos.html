@@ -4,37 +4,120 @@
     <meta charset="UTF-8">
     <meta name="author" content="Naiya Rodriguez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMP GUARD</title>
+    <title>EMP GUARD - Contáctanos</title>
     <link rel="stylesheet" href="css/css.css">
-    <!-- Icono de sitio web que tengo que poner -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
     <meta name="description" content="Empresa que vende maletines especiales contra pulsos electromagneticos">
+    <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="productos.html">PRODUCTOS</a></li>
-                <li><a href="pem.html">PRODUCTOS</a></li>
-                <li><a href="contactanos.html">CONTACTANOS</a></li>
+    <!-- Skip link -->
+    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <nav class="menu" role="navigation" aria-label="Menú principal">
+            <img src="../img/logo.png" alt="Logo EMP Guard" class="nav-logo">
+            <input type="checkbox" id="menu-toggle" aria-expanded="false">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu-items" id="menu-items" aria-hidden="true">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="pem.html">Artículo</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
             </ul>
         </nav>
 
-        <h1>EMP Guard</h1>
+        <h1>CONTACTANOS</h1>
         <div class="frases">
             <span class="frase1">Más que un maletín</span>
             <span class="frase2">Más que un accesorio</span>
         </div>
+        <div id="contenedorFlecha">
+            <img src="img/flecha.png" id="flecha" alt="Flecha hacia abajo">
+        </div>
     </header>
 
-    <main>
+<main id="contenido" role="main">
+    <div class="contact-form-grid">
 
-    </main>
-    <footer>
-        <div id="logos">
-            <img src="img/logo-facebook.png">
+        <!-- Formulario -->
+        <section id="formulario-contacto" role="region" aria-labelledby="formulario-contacto-title">
+            <h2 id="formulario-contacto-title">Formulario de contacto</h2>
+            <form action="/enviar-formulario" method="POST" aria-label="Formulario de contacto">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required aria-required="true">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+
+                <label for="mensaje">Mensaje o sugerencia:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+
+                <label>
+                    <input type="checkbox" name="acepto" required id="checkbox" aria-required="true">
+                    He leído y acepto la <a href="/politica-privacidad" target="_blank">política de privacidad</a>.
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" role="region" aria-labelledby="contacto-title">
+            <h2 id="contacto-title">Contacto</h2>
+            <p>Si tienes alguna duda ponte en contacto con nosotros</p>
+            <ul>
+                <li><strong>Email:</strong> PEMGuard@gmail.com</li>
+                <li><strong>Teléfono:</strong> +34 600 123 456</li>
+            </ul>
+        </section>
+
+        <!-- Geolocalización -->
+        <section id="geolocalizacion" role="region" aria-labelledby="geolocalizacion-title">
+            <h2 id="geolocalizacion-title">Dónde estamos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.16191129024227!2d-3.3153805661046873!3d43.406486149931794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4eecf2722ea87b%3A0x5d0c29df924ba9d5!2sIsla%20Cercada!5e0!3m2!1ses!2ses!4v1761915583069!5m2!1ses!2ses"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                title="Mapa de ubicación EMP Guard"></iframe>
+        </section>
+
+        <!-- Redes sociales -->
+        <section id="redes-sociales" role="region" aria-labelledby="redes-title">
+            <h2 id="redes-title">Síguenos en redes sociales</h2>
+            <div class="iconos">
+                <a href="https://facebook.com/tuempresa" target="_blank" aria-label="Facebook EMP Guard"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com/tuempresa" target="_blank" aria-label="Instagram EMP Guard"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://linkedin.com/company/tuempresa" target="_blank" aria-label="LinkedIn EMP Guard"><img src="img/linkdin.png" alt="LinkedIn"></a>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer role="contentinfo">
+    <div class="piePagina">
+        <p>&copy; 2025 EMP Guard. Todos los derechos reservados. Naiya Rodriguez DW2 09/11/2025.</p>
+        <ul class="links">
+            <li><a href="#quienes-somos">Quiénes somos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#formulario-contacto">Formulario</a></li>
+            <li><a href="/politica-privacidad">Política de privacidad</a></li>
+        </ul>
+        <div class="redesSociales">
+            <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="img/linkdin.png" alt="LinkedIn"></a>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<!-- Aviso legal -->
+<div id="avisoLegal" class="aviso-legal" role="dialog" aria-labelledby="avisoLegal">
+    <p>
+        Este sitio web utiliza cookies y contiene información sobre el aviso legal, política de privacidad y política de cookies. Al continuar navegando, aceptas estas condiciones.
+    </p>
+    <button id="aceptarAviso">Aceptar</button>
+</div>
+
+<script src="js/js.js"></script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+main {
+  background-color: rgba(54, 43, 89, 0.9);
+  padding-top: 10vh;       
+  padding-bottom: 10vh;
+}
+
+main section {
+  padding: 5vh 5%;        
+  max-width: 80%;           
+  margin: 0 auto 2vh auto;  
+  background-color: #ffffff;
+  border-radius: 1em;    
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  color: #05316C;
+  margin-bottom: 1em;
+  font-size: 2em;           
+  border-bottom: 0.2em solid #cc6474;
+  padding-bottom: 0.5em;
+}
+
+main p,
+main ul {
+  font-size: 1em;
+  line-height: 1.6em;
+  color: #2c2c2c;
+}
+
+main ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+main ul li {
+  margin-bottom: 0.8em;
+  padding: 0.8em 1em;
+  background-color: #f8f8f8;
+  border-left: 0.3em solid #cc6474;
+  border-radius: 0.5em;
+}
+
+main ul li:hover {
+  background-color: #f0e6e8;
+}
+
+/* Impresión */
+@media print {
+  main {
+    background-color: white !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  main section {
+    background-color: white !important;
+    box-shadow: none !important;
+    border: 0.05em solid #ccc;
+    page-break-inside: avoid;
+  }
+
+  main h2 {
+    color: black !important;
+    border-bottom: 0.05em solid #000 !important;
+  }
+
+  main p,
+  main ul,
+  main li {
+    color: black !important;
+    font-size: 0.9em;
+  }
+
+  main ul {
+    list-style-type: disc;
+    padding-left: 2em;
+  }
+}

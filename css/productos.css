@@ -1,0 +1,253 @@
+/* Productos */
+/* Mejores productos */
+h2 {
+  text-align: center;
+  color: #05316c;
+}
+
+#mejores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12.5rem); 
+  justify-items: center;
+  justify-content: center;
+  gap: 10vh;
+}
+
+.mejorProducto {
+  position: relative;
+  width: 13.75rem;  
+  height: 17.5rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.descripcion {
+  position: absolute;
+  bottom: 0.625rem;  
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(54, 43, 89, 0.9);
+  color: white;
+  width: 10rem;       
+  padding: 0.625rem; 
+  border-radius: 15%;
+  text-align: center;
+}
+
+.maletin {
+  position: absolute;
+  height: 12.5rem; 
+  width: 12.5rem;  
+  top: 0;
+  box-shadow: 0 0 0.625rem rgba(54, 43, 89, 0.9); 
+}
+/* TODOS NUESTROS PRODUCTOS */
+#todos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  gap: 2rem; 
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(54, 43, 89, 0.9);
+  border-radius: 5%;
+  padding: 10vh;
+}
+
+.todosProductos {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.todosProductos:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.maletinMas {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: contain; 
+  border-radius: 1rem 1rem 0 0; 
+}
+
+.descripcionTodos {
+  padding: 1rem;
+  text-align: center;
+}
+
+.descripcionTodos h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #05316c;
+}
+
+.descripcionTodos p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+#productosExtra {
+  margin-top: 6.25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.625rem rgba(54, 43, 89, 0.9);
+  margin-bottom: 1rem;
+  padding: 2rem 0;
+}
+
+.nombre {
+  background-color: rgba(54, 43, 89, 0.902);
+  color: white;
+  padding: 0.3125rem;
+  border-radius: 0.5rem;
+  margin-top: 0.3125rem;
+  text-align: center;
+}
+
+.carousel:hover .logos {
+  animation-play-state: paused;
+}
+
+.logos {
+  display: flex;
+  gap: 1.25rem;
+  animation: girar 40s linear infinite;
+  width: max-content;
+}
+
+.producto {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.1);
+}
+
+.extra {
+  width: 12.5rem;
+  height: 12.5rem;
+  object-fit: contain;
+}
+
+/* Animación */
+@keyframes girar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3)); 
+  }
+}
+/* Responsive */
+@media (max-width: 40rem) { 
+  #mejores {
+    display: grid;
+    grid-template-columns: repeat(1, 11.25rem);
+    justify-content: center;
+  }
+    #todos {
+    grid-template-columns: repeat(1, 11.25rem);
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .maletin {
+    max-width: 150px;
+    height: 150px;
+  }
+}
+
+/* Impresión */
+@media print {
+  h1, h2, h3 {
+    color: black !important;
+    text-align: center;
+    page-break-after: avoid;
+  }
+
+  p {
+    color: black !important;
+    font-size: 0.75rem;  
+    line-height: 1.5;
+  }
+
+  #mejores {
+    display: block;
+    margin: 1.25rem auto;
+    page-break-inside: avoid;
+  }
+
+  .mejorProducto {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem; 
+    margin-bottom: 1.25rem;
+    border-bottom: 0.0625rem solid #ccc;
+    padding-bottom: 0.625rem; 
+  }
+
+  .mejorProducto img {
+    width: 7.5rem; 
+    height: auto;
+  }
+
+  .descripcion p {
+    margin: 0.3125rem;
+  }
+
+  #productosExtra {
+    display: block;
+    margin-top: 2.5rem;
+  }
+
+  .carousel {
+    display: block;
+  }
+
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr)); 
+    gap: 1.25rem; 
+
+  }
+
+  .producto {
+    text-align: center;
+    page-break-inside: avoid;
+  }
+
+  .producto img {
+    width: 6.25rem; 
+    height: auto;
+    margin-bottom: 0.3125rem;
+  }
+
+  .nombre {
+    font-size: 0.6875rem;
+    color: black;
+  }
+
+  .no-imprimir {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
