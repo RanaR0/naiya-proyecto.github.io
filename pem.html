@@ -5,6 +5,9 @@
     <meta name="author" content="Naiya Rodriguez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EMP GUARD - Artículo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/articulo.css">
     <link rel="icon" href="/img/logo.png" type="image/x-icon">
@@ -17,113 +20,233 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "v4b2lk9t03");
     </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NK4FB4GN');</script>
+    <!-- End Google Tag Manager -->
     <script src="https://t.contentsquare.net/uxa/4751d6e8eb2d5.js"></script>
 </head>
 <body>
-    <!-- Skip link -->
-    <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
-    <header role="banner">
-        <nav class="menu" role="navigation" aria-label="Menú principal">
-            <img src="../img/logo.png" alt="Logo" class="nav-logo">
-            <input type="checkbox" id="menu-toggle" aria-expanded="false">
-            <label for="menu-toggle" class="menu-icon">&#9776;</label>
-            <ul class="menu-items" id="menu-items" aria-hidden="true">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="pem.html">Artículo</a></li>
-                <li><a href="contactanos.html">Contáctanos</a></li>
-            </ul>
-        </nav>
+<a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
-        <h1>ARTÍCULO</h1>
-        <div class="frases">
-            <span class="frase1">Más que un maletín</span>
-            <span class="frase2">Más que un accesorio</span>
-        </div>
-        <div id="contenedorFlecha">
-            <img src="img/flecha.png" id="flecha" alt="Flecha hacia abajo">
-        </div>
-    </header>
+<header role="banner">
+    <nav class="menu d-flex align-items-center justify-content-between"
+         role="navigation" aria-label="Menú principal">
 
-    <main id="contenido" role="main">
-        <section role="region" aria-label="Qué es un EMP">
-            <h2>¿Qué es un EMP?</h2>
-            <p>EMP significa <strong>Pulso Electromagnético</strong> (en inglés <em>Electromagnetic Pulse</em>). Es una descarga rápida de energía electromagnética que viaja por el aire. Puede dañar cualquier dispositivo que funcione con electricidad o tenga circuitos electrónicos.</p>
-            <p>Cuando ocurre un EMP, se libera mucha energía en solo unos <strong>microsegundos</strong>. Esta energía crea campos eléctricos y magnéticos muy fuertes, que pueden hacer que en los cables y chips se formen corrientes eléctricas intensas. Estas corrientes pueden quemar o romper los componentes, causando fallos, apagones o destruir completamente el aparato.</p>
-            <p>En resumen, un EMP es como una <strong>ola invisible de energía</strong> que pasa muy rápido y daña los circuitos electrónicos. No causa fuego ni explosiones, pero puede tener efectos graves en la tecnología.</p>
-            <h3>Tipos de EMP</h3>
-            <ul>
-                <li><strong>EMP nuclear (HEMP)</strong>: ocurre cuando una bomba nuclear explota muy alto en el cielo (a decenas o cientos de kilómetros). Puede afectar áreas muy grandes, incluso países completos, dañando redes eléctricas, satélites y sistemas de comunicación.</li>
-                <li><strong>EMP natural</strong>: viene de tormentas solares o explosiones en el Sol llamadas <em>eyecciones de masa coronal</em>. Un evento famoso fue el <strong>Evento Carrington</strong> en 1859.</li>
-                <li><strong>EMP no nuclear o dirigido</strong>: son dispositivos especiales que crean pulsos electromagnéticos fuertes en un área pequeña.</li>
-            </ul>
-            <h3>¿Afecta a las personas?</h3>
-            <p>No, un EMP <strong>no daña el cuerpo humano</strong>. No produce calor ni radiación peligrosa para las personas. Pero puede causar problemas como apagones y cortes en las comunicaciones.</p>
-        </section>
+        <img src="../img/logo.png" alt="Logo" class="nav-logo">
 
-        <section role="region" aria-label="Daño a los dispositivos">
-            <h2>¿Destruye permanentemente tus dispositivos?</h2>
-            <p>Un EMP puede causar corrientes muy fuertes en los circuitos electrónicos. Esto puede quemar chips y componentes, dejando los dispositivos inutilizables. En casos graves, el daño es para siempre.</p>
-            <p>Incluso si un dispositivo no se rompe, podría no funcionar si la red eléctrica queda dañada y no puede recargarse.</p>
-        </section>
+        <input type="checkbox" id="menu-toggle" aria-expanded="false">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-        <section role="region" aria-label="Dispositivos que podrían sobrevivir">
-            <h2>¿Qué dispositivos podrían sobrevivir?</h2>
-            <ul>
-                <li>Dispositivos simples sin circuitos electrónicos complejos, como relojes mecánicos o radios de cuerda.</li>
-                <li>Herramientas manuales y electrodomésticos sin electricidad.</li>
-                <li>Aparatos antiguos que usan tubos de vacío, que son menos sensibles.</li>
-                <li>Dispositivos guardados en <strong>jaulas de Faraday</strong> o cajas metálicas que bloquean el EMP.</li>
-            </ul>
-        </section>
+        <ul class="menu-items list-unstyled d-flex gap-3 mb-0"
+            id="menu-items" aria-hidden="true">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="pem.html">Artículo</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+        </ul>
+    </nav>
 
-        <section role="region" aria-label="Protección casera">
-            <h2>Protección casera</h2>
-            <p>Para proteger tus aparatos de un EMP, puedes:</p>
-            <ul>
-                <li>Envolverlos con papel aislante y varias capas de papel aluminio.</li>
-                <li>Guardarlos en cubos metálicos con tapa, con aislamiento por dentro.</li>
-                <li>Usar microondas viejos apagados como jaulas de Faraday improvisadas.</li>
-                <li>Conectar techos metálicos o paneles solares a tierra para desviar la energía.</li>
-            </ul>
-        </section>
+    <h1 class="text-center">ARTÍCULO</h1>
 
-        <section role="region" aria-label="Soluciones profesionales">
-            <h2>Soluciones profesionales</h2>
-            <p>En <strong>EMP GUARD</strong> ofrecemos maletines y jaulas de Faraday con resina conductiva y blindaje metálico que bloquean los campos electromagnéticos. Son resistentes al agua, polvo y condiciones duras, y cumplen con normas militares (MIL-STD).</p>
-        </section>
-
-        <section role="region" aria-label="Importancia de la preparación">
-            <h2>¿Por qué prepararte?</h2>
-            <p>Prepararte antes significa proteger tus cosas, tu trabajo y mantener tu conexión con el mundo sin depender de otros.</p>
-        </section>
-    </main>
-
-    <footer role="contentinfo">
-        <div class="piePagina">
-            <p>&copy; 2025 EMP Guard. Todos los derechos reservados. Naiya Rodriguez DW2 09/11/2025</p>
-            <ul class="links">
-                <li><a href="#quienes-somos">Quiénes somos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#formulario-contacto">Formulario</a></li>
-                <li><a href="/politica-privacidad">Política de privacidad</a></li>
-            </ul>
-            <div class="redesSociales">
-                <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="https://linkedin.com" target="_blank"><img src="img/linkdin.png" alt="LinkedIn"></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Aviso legal -->
-    <div id="avisoLegal" class="aviso-legal" role="dialog" aria-labelledby="avisoLegal">
-        <p>Este sitio web utiliza cookies y contiene información sobre el aviso legal, política de privacidad y política de cookies. Al continuar navegando, aceptas estas condiciones.</p>
-        <button id="aceptarAviso">Aceptar</button>
+    <div class="frases text-center">
+        <span class="frase1">Más que un maletín</span>
+        <span class="frase2">Más que un accesorio</span>
     </div>
 
-    <!-- JS externo -->
-    <script src="js/js.js"></script>
+    <div id="contenedorFlecha" class="text-center">
+        <img src="img/flecha.png" id="flecha" alt="Flecha hacia abajo">
+    </div>
+</header>
+
+<main id="contenido" class="bg-dark-custom py-5">
+
+    <section role="region" aria-label="Qué es un EMP"
+        class="container articulo-seccion bg-white rounded shadow mx-auto p-5">
+
+        <h2>¿Qué es un EMP?</h2>
+
+        <p>
+            EMP significa <strong>Pulso Electromagnético</strong> (en inglés
+            <em>Electromagnetic Pulse</em>). Es una descarga rápida de energía
+            electromagnética que viaja por el aire. Puede dañar cualquier
+            dispositivo que funcione con electricidad o tenga circuitos electrónicos.
+        </p>
+
+        <p>
+            Cuando ocurre un EMP, se libera mucha energía en solo unos
+            <strong>microsegundos</strong>. Esta energía crea campos eléctricos y
+            magnéticos muy fuertes, que pueden hacer que en los cables y chips se
+            formen corrientes eléctricas intensas. Estas corrientes pueden quemar o
+            romper los componentes, causando fallos, apagones o destruir completamente
+            el aparato.
+        </p>
+
+        <p>
+            En resumen, un EMP es como una <strong>ola invisible de energía</strong>
+            que pasa muy rápido y daña los circuitos electrónicos. No causa fuego ni
+            explosiones, pero puede tener efectos graves en la tecnología.
+        </p>
+
+        <h3>Tipos de EMP</h3>
+
+        <ul class="list-unstyled">
+            <li class="articulo-li p-3 mb-3 rounded">
+                <strong>EMP nuclear (HEMP)</strong>: ocurre cuando una bomba nuclear
+                explota muy alto en el cielo (a decenas o cientos de kilómetros). Puede
+                afectar áreas muy grandes, incluso países completos, dañando redes
+                eléctricas, satélites y sistemas de comunicación.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                <strong>EMP natural</strong>: viene de tormentas solares o explosiones en
+                el Sol llamadas <em>eyecciones de masa coronal</em>. Un evento famoso fue
+                el <strong>Evento Carrington</strong> en 1859.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                <strong>EMP no nuclear o dirigido</strong>: son dispositivos especiales
+                que crean pulsos electromagnéticos fuertes en un área pequeña.
+            </li>
+        </ul>
+
+        <h3>¿Afecta a las personas?</h3>
+
+        <p>
+            No, un EMP <strong>no daña el cuerpo humano</strong>. No produce calor ni
+            radiación peligrosa para las personas. Pero puede causar problemas como
+            apagones y cortes en las comunicaciones.
+        </p>
+    </section>
+
+    <section role="region" aria-label="Daño a los dispositivos"
+        class="container articulo-seccion bg-white rounded shadow mx-auto p-5">
+
+        <h2>¿Destruye permanentemente tus dispositivos?</h2>
+
+        <p>
+            Un EMP puede causar corrientes muy fuertes en los circuitos electrónicos.
+            Esto puede quemar chips y componentes, dejando los dispositivos
+            inutilizables. En casos graves, el daño es para siempre.
+        </p>
+
+        <p>
+            Incluso si un dispositivo no se rompe, podría no funcionar si la red
+            eléctrica queda dañada y no puede recargarse.
+        </p>
+    </section>
+
+    <section role="region" aria-label="Dispositivos que podrían sobrevivir"
+        class="container articulo-seccion bg-white rounded shadow mx-auto p-5">
+
+        <h2>¿Qué dispositivos podrían sobrevivir?</h2>
+
+        <ul class="list-unstyled">
+            <li class="articulo-li p-3 mb-3 rounded">
+                Dispositivos simples sin circuitos electrónicos complejos, como relojes
+                mecánicos o radios de cuerda.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                Herramientas manuales y electrodomésticos sin electricidad.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                Aparatos antiguos que usan tubos de vacío, que son menos sensibles.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                Dispositivos guardados en <strong>jaulas de Faraday</strong> o cajas
+                metálicas que bloquean el EMP.
+            </li>
+        </ul>
+    </section>
+
+    <section role="region" aria-label="Protección casera"
+        class="container articulo-seccion bg-white rounded shadow mx-auto p-5">
+
+        <h2>Protección casera</h2>
+
+        <p>Para proteger tus aparatos de un EMP, puedes:</p>
+
+        <ul class="list-unstyled">
+            <li class="articulo-li p-3 mb-3 rounded">
+                Envolverlos con papel aislante y varias capas de papel aluminio.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                Guardarlos en cubos metálicos con tapa, con aislamiento por dentro.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                Usar microondas viejos apagados como jaulas de Faraday improvisadas.
+            </li>
+            <li class="articulo-li p-3 mb-3 rounded">
+                Conectar techos metálicos o paneles solares a tierra para desviar la energía.
+            </li>
+        </ul>
+    </section>
+
+    <section role="region" aria-label="Soluciones profesionales"
+        class="container articulo-seccion bg-white rounded shadow mx-auto p-5">
+
+        <h2>Soluciones profesionales</h2>
+
+        <p>
+            En <strong>EMP GUARD</strong> ofrecemos maletines y jaulas de Faraday con
+            resina conductiva y blindaje metálico que bloquean los campos
+            electromagnéticos. Son resistentes al agua, polvo y condiciones duras, y
+            cumplen con normas militares (MIL-STD).
+        </p>
+    </section>
+
+    <section role="region" aria-label="Importancia de la preparación"
+        class="container articulo-seccion bg-white rounded shadow mx-auto p-5">
+
+        <h2>¿Por qué prepararte?</h2>
+
+        <p>
+            Prepararte antes significa proteger tus cosas, tu trabajo y mantener tu
+            conexión con el mundo sin depender de otros.
+        </p>
+    </section>
+
+</main>
+
+<footer role="contentinfo">
+    <div class="piePagina">
+        <p>&copy; 2025 EMP Guard. Todos los derechos reservados. Naiya Rodriguez DW2 09/11/2025</p>
+
+        <ul class="links">
+            <li><a href="#quienes-somos">Quiénes somos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#formulario-contacto">Formulario</a></li>
+            <li><a href="/politica-privacidad">Política de privacidad</a></li>
+        </ul>
+
+        <div class="redesSociales">
+            <a href="https://facebook.com" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="img/linkdin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<div id="avisoLegal" class="aviso-legal" role="dialog">
+    <p>
+        Este sitio web utiliza cookies y contiene información sobre el aviso legal,
+        política de privacidad y política de cookies. Al continuar navegando,
+        aceptas estas condiciones.
+    </p>
+    <button id="aceptarAviso">Aceptar</button>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/js.js"></script>
+
 </body>
 </html>
