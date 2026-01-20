@@ -73,13 +73,13 @@ form textarea {
 }
 
 form a {
-    color: #cc6474;
+    color: #362b59;
     text-decoration: underline;
 }
 
 form button {
     padding: 0.75em;
-    background-color: #cc6474;
+    background-color: #362b59;
     color: white;
     border: none;
     border-radius: 0.5rem;
