@@ -36,4 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
             formulario.reset();
         });
     }
+    const colorFondo = document.getElementById("colorFondo");
+    const colorTexto = document.getElementById("colorTexto");
+
+    colorFondo.addEventListener("input", () => {
+        document.documentElement.style.setProperty(
+            "--color-fondo",
+            colorFondo.value
+        );
+    });
+
+    colorTexto.addEventListener("input", () => {
+        document.documentElement.style.setProperty(
+            "--color-texto",
+            colorTexto.value
+        );
+    });
 });
