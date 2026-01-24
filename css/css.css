@@ -232,16 +232,15 @@ footer {
 }
 
 .links li a {
-    color: #fcdbe0;
+    color: #fcdbe0; /* Color original */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .links li a:hover {
-    color: #E9AFA3;
+    color: #E9AFA3; /* Hover original */
 }
-
 .redesSociales {
     margin-top: 0.9375rem;
     display: flex;

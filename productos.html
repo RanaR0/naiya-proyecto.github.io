@@ -32,7 +32,7 @@
 
     <header role="banner">
         <nav class="menu" role="navigation" aria-label="Menú principal">
-            <img src="../img/logo.png" alt="Logo EMP Guard" class="nav-logo">
+            <img src="img/logo.png" alt="Logo EMP Guard" class="nav-logo">
             <input type="checkbox" id="menu-toggle" aria-expanded="false">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="menu-items" id="menu-items" aria-hidden="true">
@@ -251,22 +251,35 @@
         </section>
     </main>
 
-    <footer role="contentinfo">
-        <div class="piePagina">
-            <p>&copy; 2025 EMP Guard. Todos los derechos reservados. Naiya Rodriguez DW2 09/11/2025</p>
-            <ul class="links">
-                <li><a href="#quienes-somos">Quiénes somos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#formulario-contacto">Formulario</a></li>
-                <li><a href="/politica-privacidad">Política de privacidad</a></li>
-            </ul>
-            <div class="redesSociales">
-                <a href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-                <a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-                <a href="https://linkedin.com" target="_blank"><img src="img/linkdin.png" alt="LinkedIn"></a>
-            </div>
+<footer role="contentinfo" class="bg-dark-custom text-white py-4">
+
+    <div class="piePagina text-center mx-auto">
+
+        <p>&copy; 2025 EMP Guard. Todos los derechos reservados. Naiya Rodriguez DW2 09/11/2025</p>
+
+        <!-- Links del footer -->
+        <ul class="links list-unstyled d-flex justify-content-center flex-wrap gap-3 my-3">
+            <li><a href="index.html" class="text-light fw-bold text-decoration-none">Quiénes somos</a></li>
+            <li><a href="contactanos.html" class="text-light fw-bold text-decoration-none">Contacto</a></li>
+            <li><a href="contactanos.html" class="text-light fw-bold text-decoration-none">Formulario</a></li>
+            <li><a href="index.html" class="text-light fw-bold text-decoration-none">Política de privacidad</a></li>
+        </ul>
+
+        <!-- Redes sociales -->
+        <div class="redesSociales d-flex justify-content-center gap-3 mt-3">
+            <a href="https://facebook.com" target="_blank">
+                <img src="img/facebook.png" alt="Facebook" class="img-fluid" >
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" class="img-fluid" >
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="img/linkdin.png" alt="LinkedIn" class="img-fluid">
+            </a>
         </div>
-    </footer>
+
+    </div>
+</footer>
 
     <!-- Aviso legal -->
     <div id="avisoLegal" class="aviso-legal" role="dialog" aria-labelledby="avisoLegal">
