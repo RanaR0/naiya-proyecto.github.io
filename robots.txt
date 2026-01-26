@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ranar0.github.io/naiya-proyecto.github.io/sitemap.xml
